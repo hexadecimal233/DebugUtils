@@ -1,0 +1,8 @@
+{
+  "name": "unlocklauncher",
+  "displayName": "解锁发射器",
+  "author": "TBK",
+  "description": "解锁发射台，行星际加速器",
+  "version": "1.0",
+  "minGameVersion": 105,
+}
