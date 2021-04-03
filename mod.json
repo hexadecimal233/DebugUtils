@@ -1,8 +1,8 @@
 {
   "name": "unlocklauncher",
-  "displayName": "解锁发射器",
+  "displayName": "Unlock Hidden Items/解锁隐藏物品",
   "author": "TBK",
-  "description": "解锁发射台，行星际加速器",
+  "description": "Unlock items in sandbox mode.沙盒模式解锁隐藏物品",
   "version": "1.0",
   "minGameVersion": 105,
 }

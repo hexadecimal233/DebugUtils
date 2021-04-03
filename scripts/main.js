@@ -10,5 +10,7 @@ if (Vars.net.client()) {
 		Blocks.launchPad.buildVisibility = BuildVisibility.shown;
 		Blocks.launchPadLarge.buildVisibility = BuildVisibility.shown;
 		Blocks.interplanetaryAccelerator.buildVisibility = BuildVisibility.shown;
+		Blocks.coreShard.buildVisibility = BuildVisibility.shown;
+		
 }
 	
