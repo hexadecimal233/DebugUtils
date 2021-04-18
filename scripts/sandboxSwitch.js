@@ -24,4 +24,4 @@ sandboxSwitch.buildType = () =>
 		Vars.state.rules.infiniteResources = !Vars.state.rules.infiniteResources;
     },
   });
-sandboxSwitch.buildVisibility = BuildVisibility.sandboxOnly;
+sandboxSwitch.buildVisibility = BuildVisibility.shown;

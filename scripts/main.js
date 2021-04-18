@@ -2,7 +2,7 @@ require("unlock2");
 require("unlock");
 require("debugUnit");
 require("corelimits");
-require("sandboxSwitch.js");
+require("sandboxSwitch");
 require("block/debugClean");
 require("block/debugSand");
 require("block/debugAir");
