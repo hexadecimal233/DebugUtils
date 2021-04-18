@@ -1,0 +1,7 @@
+unitType: debug-core-unit
+health: 500000
+itemCapacity: 500000
+breakable: true
+size: 2
+unitCapModifier: 5000
+category: effect
