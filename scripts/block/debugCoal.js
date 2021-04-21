@@ -18,7 +18,8 @@ debugCoal.buildType = () =>
   extendContent(Wall.WallBuild, debugCoal, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.oreCoal);
+      tile.setBlock(Blocks.air);
+	  tile.setOverlay(Blocks.oreCoal);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

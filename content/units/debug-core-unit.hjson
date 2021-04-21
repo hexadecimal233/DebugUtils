@@ -13,7 +13,7 @@ armor: 1800
 buildSpeed: 10.0
 rotateShooting: true
 commandLimit: 15
-engineOffset: 8
+engineOffset: 15
 flying: true
 weapons: [ 
 {

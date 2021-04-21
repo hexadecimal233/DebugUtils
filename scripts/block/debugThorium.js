@@ -18,7 +18,8 @@ debugThorium.buildType = () =>
   extendContent(Wall.WallBuild, debugThorium, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.oreThorium);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.oreThorium);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

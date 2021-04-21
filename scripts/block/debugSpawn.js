@@ -18,7 +18,8 @@ debugSpawn.buildType = () =>
   extendContent(Wall.WallBuild, debugSpawn, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.spawn);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.spawn);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

@@ -18,7 +18,8 @@ debugTendrils.buildType = () =>
   extendContent(Wall.WallBuild, debugTendrils, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.tendrils);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.tendrils);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

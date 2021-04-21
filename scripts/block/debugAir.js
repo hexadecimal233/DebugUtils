@@ -20,6 +20,7 @@ debugAir.buildType = () =>
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
       tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.air);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

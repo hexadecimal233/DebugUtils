@@ -18,7 +18,8 @@ debugPebbles.buildType = () =>
   extendContent(Wall.WallBuild, debugPebbles, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.pebbles);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.pebbles);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

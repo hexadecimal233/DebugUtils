@@ -18,7 +18,8 @@ debugTitanium.buildType = () =>
   extendContent(Wall.WallBuild, debugTitanium, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.oreTitanium);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.oreTitanium);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

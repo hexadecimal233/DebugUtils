@@ -18,7 +18,8 @@ debugCopper.buildType = () =>
   extendContent(Wall.WallBuild, debugCopper, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setFloor(Blocks.oreCopper);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.oreCopper);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

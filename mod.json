@@ -1,8 +1,8 @@
 {
   "name": "debugutils",
-  "displayName": "1",
+  "displayName": "[orange]调试[green]工具[]/[orange]Debug [green]Utilities",
+  "description": "调试的工具。/Utilities for debugging.",
   "author": "TBK",
-  "description": "1",
-  "version": "1.3",
+  "version": "1.4",
   "minGameVersion": 105,
 }

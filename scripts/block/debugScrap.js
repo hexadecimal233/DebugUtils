@@ -18,7 +18,8 @@ debugScrap.buildType = () =>
   extendContent(Wall.WallBuild, debugScrap, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.oreScrap);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.oreScrap);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();

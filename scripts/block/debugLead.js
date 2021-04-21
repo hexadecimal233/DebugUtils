@@ -18,7 +18,8 @@ debugLead.buildType = () =>
   extendContent(Wall.WallBuild, debugLead, {
     placed() {
       var tile = Vars.world.tile(this.tileX(), this.tileY());
-      tile.setBlock(Blocks.oreLead);
+      tile.setBlock(Blocks.air);
+      tile.setOverlay(Blocks.oreLead);
       Vars.renderer.minimap.reset();
       Vars.renderer.minimap.updateAll();
       Vars.renderer.blocks.floor.clearTiles();
