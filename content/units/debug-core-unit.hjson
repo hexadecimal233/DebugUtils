@@ -4,7 +4,7 @@ accel: 0.5
 drag: 0.0625
 mineSpeed: 40
 mineTier: 6
-health: 41000
+health: 410000
 itemCapacity: 800
 rotateSpeed: 500
 hitSize: 13
