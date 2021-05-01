@@ -11,6 +11,8 @@ if (Vars.net.client()) {
 		Blocks.launchPadLarge.buildVisibility = BuildVisibility.shown;
 		Blocks.interplanetaryAccelerator.buildVisibility = BuildVisibility.shown;
 		Blocks.coreShard.buildVisibility = BuildVisibility.shown;
+		Blocks.thruster.buildVisibility = BuildVisibility.shown;
+		Blocks.thruster.category = Category.defense;
 		Blocks.powerSource.powerProduction = Number.MAX_VALUE;
 		
 }

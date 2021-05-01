@@ -6,4 +6,5 @@ const core1 = extendContent(CoreBlock, "debugCore", {
     beforePlaceBegan(tile, previous) {},
     drawPlace(x, y, rotation, valid) {},
 });
+core1.buildType = prov(() => new JavaAdapter(CoreBlock.CoreBuild, {damage(damage) {  },handleDamage(tile, amount) { return 0; },}, core1));
 core1.buildVisibility = BuildVisibility.sandboxOnly;
