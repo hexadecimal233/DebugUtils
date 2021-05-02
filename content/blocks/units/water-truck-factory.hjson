@@ -1,0 +1,29 @@
+type: UnitFactory
+size: 3
+health: 300
+constructTime: 780
+liquidCapacity: 180
+requirements: [
+
+]
+plans: [
+    {
+      unit: water-truck
+      requirements: [
+		lead/40
+		silicon/30
+		titanium/60
+      ]
+      time: 1200
+    }
+]
+consumes: {
+power: 3
+liquid:{
+liquid: water
+amount: 2
+}
+}
+
+category: units
+research: wave

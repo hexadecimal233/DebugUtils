@@ -8,6 +8,7 @@ lightOpacity: 1.174
 health: 4500
 armor: 300
 range: 2400
+ammoType: power
 itemCapacity: 100
 hitSize: 9
 crashDamageMultiplier: 9
@@ -16,7 +17,7 @@ circleTarget: true
 immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
 engineOffset: 7
 engineSize: 7
-targetAir: trye
+targetAir: true
 lowAltitude: true
 destructibleWreck: false
 flying: true

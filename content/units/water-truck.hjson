@@ -1,0 +1,41 @@
+type: mech
+health: 200
+drawCell: false
+itemCapacity: 10
+hitSize: 8
+speed: 0.8
+engineSize: 2
+engineOffset: 0
+alwaysUnlocked: true
+ammoType: power
+weapons: [
+{
+name: water-spread
+rotateSpeed: 5
+targetAir: true
+reload: 8
+targetGround: true
+reloadTime: 15
+shootCone: 5
+shootSound: spray
+shootEffect: shootLiquid
+shots: 2
+alternate: false
+spread: 16
+inaccuracy: 10
+x: 0
+y: 0
+bullet: {
+type: liquidBulletType
+liquid: water
+lifetime:80
+speed: 7
+knockback: 4
+puddleSize: 18
+orbSize: 5
+drag: 0.002
+statusDuration: 300
+damage: 8
+status: wet
+}}
+]
