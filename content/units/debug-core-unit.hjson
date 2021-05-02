@@ -4,7 +4,7 @@ lightOpacity: 1.174
 speed: 4.05
 accel: 0.5
 drag: 0.0625
-mineSpeed: 40
+mineSpeed: 200
 mineTier: 6
 health: 410000
 itemCapacity: 800

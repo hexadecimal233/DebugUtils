@@ -23,6 +23,16 @@ plans: [
       ]
       time: 30000
     }
+    {
+      unit: nukesmall
+      requirements: [
+		thorium/1000
+		blast-compound/100
+		pyratite/100
+		titanium/600
+      ]
+      time: 14000
+    }
 ]
 consumes: {
 power: 18

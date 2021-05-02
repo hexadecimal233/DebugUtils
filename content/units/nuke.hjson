@@ -16,14 +16,14 @@ circleTarget: true
 immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
 engineOffset: 7
 engineSize: 7
-targetAir: false
+targetAir: trye
 lowAltitude: true
 destructibleWreck: false
 flying: true
 alwaysUnlocked: true
 weapons:[
   {
-    name: gnat-weapon
+    name: nuke
     x: 0
     y: 0
     shootY: 0
@@ -45,8 +45,8 @@ weapons:[
       splashDamageRadius: 8000
 	  range: 900
 	  collidesAir: true
-	  status: blasted
-	  statusDuration: 200
+	  status: burning
+	  statusDuration: 3200
 	  hitEffect: mineBig
 	  hittable: false
       fragBullets: 50
@@ -70,8 +70,11 @@ weapons:[
 		hitEffect: mine
 		despawnEffect: pulverizeSmall
 		tileDamageMultiplier: 0.16666666666
+		status: blasted
+		statusDuration: 1500
 		reflectable: false
 		hittable: true
+		pierce: true
 		collidesAir: true
       }
     }
