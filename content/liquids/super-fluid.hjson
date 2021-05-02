@@ -1,0 +1,7 @@
+temperature: 0.01
+flammability: 0
+viscosity: 0.2
+heatCapacity: 20000
+explosiveness: 0
+color: a2e3ec
+alwaysUnlocked: true

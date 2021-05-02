@@ -1,0 +1,47 @@
+type: Separator
+size: 7
+craftEffect: formsmoke
+updateEffect: plasticburn
+hasLiquids: true
+itemCapacity: 20
+consumes: {
+power: 10
+liquid:{
+liquid: cryofluid
+amount: 0.6
+}
+  items: {
+	items: [
+	  phase-fabric/1
+	]
+  }
+}
+requirements: [
+lead/500
+silicon/200
+plastanium/190
+surge-alloy/290
+phase-fabric/200
+]
+category: crafting
+ambientSound: techloop
+ambientSoundVolume: 0.05
+craftTime: 22
+results: [
+  copper/2
+  lead/2
+  graphite/1
+  titanium/2
+  coal/1
+  scrap/2
+  thorium/1
+  silicon/2
+  plastanium/1
+  surge-alloy/2
+  spore-pod/1
+  sand/1
+  blast-compound/1
+  pyratite/2
+  metaglass/1  
+]
+research: interplanetary-accelerator

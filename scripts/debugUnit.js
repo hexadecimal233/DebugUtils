@@ -40,8 +40,9 @@ const InvincibleForceFieldAbility = (radius, regen, max, cooldown) => {
 const a11 = extendContent(UnitType, 'debug-core-unit', {});
 a11.abilities.add(new ForceFieldAbility(250, 1500, 50000, 30), new RepairFieldAbility(1500, 30, 250));
 a11.abilities.add(new ShieldRegenFieldAbility(1500, 5000, 60, 250));
+a11.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 360, 30, 250));
 a11.abilities.add(InvincibleForceFieldAbility(60, Infinity, Infinity, 300));
 a11.constructor = prov(() => extend(UnitTypes.mega.constructor.get().class, {}));
 a11.immunities = ObjectSet.with(StatusEffects.burning, StatusEffects.freezing,StatusEffects.unmoving, StatusEffects.slow, StatusEffects.wet, StatusEffects.muddy, StatusEffects.melting, StatusEffects.sapped, StatusEffects.tarred, StatusEffects.shocked, StatusEffects.blasted, StatusEffects.corroded, StatusEffects.sporeSlowed, StatusEffects.disarmed);
-a11.payloadCapacity = 1000
+a11.payloadCapacity = (15 * 15) * Vars.tilePayload;
 a11.defaultController = () => new FlyingAI();

@@ -2,21 +2,20 @@ type: mech
 health: 200
 drawCell: false
 itemCapacity: 10
-hitSize: 8
+hitSize: 14
 speed: 0.8
-engineSize: 2
-engineOffset: 0
+engineSize: 3
+engineOffset: 4
 alwaysUnlocked: true
-ammoType: power
 weapons: [
 {
 name: water-spread
 rotateSpeed: 5
 targetAir: true
-reload: 8
+reload: 5
 targetGround: true
 reloadTime: 15
-shootCone: 5
+shootCone: 3
 shootSound: spray
 shootEffect: shootLiquid
 shots: 2

@@ -12,7 +12,6 @@ itemCapacity: 50
 hitSize: 8
 crashDamageMultiplier: 6
 rotateShooting: false
-ammoType: power
 circleTarget: true
 immunities: [wet, sapped, sporeSlowed]
 engineOffset: 7

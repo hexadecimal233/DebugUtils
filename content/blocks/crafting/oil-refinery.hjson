@@ -1,0 +1,30 @@
+type: Separator
+size: 3
+updateEffect: fuelburn
+hasPower: true
+itemCapacity: 20
+craftTime: 30
+consumes: {
+power: 4
+liquid:{
+liquid: oil
+amount: 0.48
+}
+}
+requirements: [
+lead/100
+graphite/130
+silicon/150
+titanium/100
+surge-alloy/70
+thorium/40
+]
+category: crafting
+results: [
+  coal/4
+  pyratite/2
+  lead/1
+  scrap/2
+  thorium/1  
+]
+research: oil-extractor

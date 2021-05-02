@@ -1,18 +1,18 @@
 type: flying
-lightRadius: 300
+lightRadius: 350
 lightOpacity: 1.174
-speed: 4.05
-accel: 0.5
-drag: 0.0625
+speed: 4.8
+accel: 0.6
+drag: 0.02
 mineSpeed: 200
-mineTier: 6
+mineTier: 15
 health: 410000
 itemCapacity: 800
 rotateSpeed: 500
 hitSize: 13
 isCounted: false
 armor: 180000
-buildSpeed: 10.0
+buildSpeed: 20
 rotateShooting: true
 commandLimit: 20
 engineSize: 1
@@ -45,6 +45,8 @@ knockback: 15
 hitSound: none
 healPercent: 100
 collidesTeam: true
+hittable: false
+reflectable: false
 statusDuration: 600
 status: sapped
 }
@@ -162,58 +164,37 @@ damage: 2240
 status: tarred
 }}
 {
-    name: boom
-    x: 0
-    y: 0
-    shootY: 0
-    recoil: 0
-    reload: 120
-    rotate: false
-    mirror: false
-	ignoreRotation: true
-    soundPitchMin: 1.5
-    soundPitchMax: 1.5
-    velocityRnd: 1
-    lengthRand: 1
-    shots: 20
-    shootSound: explosionbig
-	inaccuracy: 360
-	shootCone: 360
-    bullet: {
+  name: bomb drop
+  x: 0
+  y: 0
+  minShootVelocity: 0.2
+  reload: 30
+  shootCone: 360
+  alternate: false
+  ejectEffect: none
+  shootSound: plasmadrop
+  bullet: {
     type: BombBulletType
-    speed: 3
-	range: 24
-	drag: 0.0125
-	lifetime: 15
-	incendAmount: 6
-	incendSpread: 20
-	incendChance: 1
-	keepVelocity: true
-    damage: 25
-    width: 14
+    splashDamage: 14000
+    splashDamageRadius: 250
+    width: 12
     height: 18
-	frontColor: ffcc44
-	backColor: ea690f
-    shootEffect: flakExplosion
-    smokeEffect: shockwave
-    despawnEffect: flakExplosion
-	hitEffect: hitLancer
-	pierce: false
-	knockback: 2
-	bulletSprite: shell
-	fragBullets: 4
-	splashDamage: 5000
-	splashDamageRadius: 200
-	status: burning
-	statusDuration: 600
-	fragBullets: 8
+    hitShake: 2
+    lifetime: 60
+    maxRange: 100
+    frontColor: e65555
+    backColor: a63d3d
+    lightRadius: 30
+    lightColor: e65555
+    shootEffect: none
+    fragBullets: 8
 	fragVelocityMin: 0.15
 	fragVelocityMax: 0.75
 	fragBullet: {
         type: LiquidBulletType
 		drag: 0.075
 	    lifetime: 150
-        damage: 10
+        damage: 50
 		incendAmount: 6
 		incendSpread: 20
 		incendChance: 0.6
@@ -225,10 +206,139 @@ status: tarred
 	    frontColor: f0511d
 	    backColor: f0511d
 	    pierce: true
-		status: burning
-		statusDuration: 900
+		status: melting
+		statusDuration: 600
 		liquid: oil
       }
+    despawnEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 30
+          sizeFrom: 0
+          sizeTo: 50
+          strokeFrom: 10
+          strokeTo: 0
+          colorFrom: ffffff
+          colorTo: e65555
+        }
+        {
+          type: ParticleEffect
+          length: 75
+          lifetime: 60
+          particles: 12
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: "7e4242"
+          colorTo: "7e4242"
+        }
+      ]
     }
   }
+}
+{
+name: none
+reload: 4
+alternate: true
+ejectEffect: none
+top: false
+shootSound: spark
+rotate: false
+x: 1.0
+y: -1.0
+bullet:{
+type: LightningBulletType
+recoil: 0
+status: shocked
+statusDuration: 100
+lightningLength: 10
+lightningLengthRand: 5
+healPercent: 100
+collidesTeam: true
+damage: 500
+}
+}
+    {
+        name: missle1
+        reload: 15.001
+        x: 7
+        y: 2
+		shootY: 3
+        top: false
+        rotate: true
+        shots: 2
+        inaccuracy: 1
+        ejectEffect: none
+		shootSound: missile
+		recoil: 3
+        rotateSpeed: 25
+        bullet: {
+            type: MissileBulletType
+            damage: 11000
+            splashDamage: 9000
+            splashDamageRadius: 80
+			homingPower: 0.19
+			homingRange: 72
+			weaveMag: 2
+			weaveScale: 5
+            speed: 6.5
+			range: 280
+			drag: 0.015
+            width: 8
+            height: 14
+			frontColor: fff8e8
+			backColor: f9c27a
+			trailColor: ffb855
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			shootEffect: shootBig
+			smokeEffect: shootSmallSmoke
+			tileDamageMultiplier: 10000
+            lifetime: 180
+			status: blasted
+			statusDuration: 80
+        }
+    },
+    {
+        name: missile1
+        reload: 15
+        x: -7
+        y: -2
+		shootY: 3
+        top: false
+        rotate: true
+        shots: 2
+        inaccuracy: 1
+        ejectEffect: none
+		shootSound: missile
+		recoil: 3
+        rotateSpeed: 25
+        bullet: {
+            type: MissileBulletType
+            damage: 11000
+            splashDamage: 9000
+            splashDamageRadius: 80
+			homingPower: 0.19
+			homingRange: 72
+			weaveMag: 2
+			weaveScale: 5
+            speed: 6.5
+			range: 280
+			drag: 0.015
+            width: 8
+            height: 14
+			frontColor: fff8e8
+			backColor: f9c27a
+			trailColor: ffb855
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			shootEffect: shootBig
+			smokeEffect: shootSmallSmoke
+			tileDamageMultiplier: 10000
+            lifetime: 180
+			status: blasted
+			statusDuration: 80
+        }
+    }
 ]

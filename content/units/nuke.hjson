@@ -8,7 +8,6 @@ lightOpacity: 1.174
 health: 4500
 armor: 300
 range: 2400
-ammoType: power
 itemCapacity: 100
 hitSize: 9
 crashDamageMultiplier: 9
