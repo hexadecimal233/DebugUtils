@@ -2,8 +2,8 @@ type: flying
 lightRadius: 350
 lightOpacity: 1.174
 speed: 4.8
-accel: 0.6
-drag: 0.02
+accel: 0.875
+drag: 0.065
 mineSpeed: 200
 mineTier: 15
 health: 410000
