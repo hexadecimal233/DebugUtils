@@ -46,6 +46,7 @@ hitSound: none
 healPercent: 100
 collidesTeam: true
 hittable: false
+color: a0bdcf
 reflectable: false
 statusDuration: 600
 status: sapped
