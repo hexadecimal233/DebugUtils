@@ -1,8 +1,8 @@
 {
   "name": "debugutils",
   "displayName": "[orange]调试[green]工具[]/[orange]Debug [green]Utilities",
-  "description": "调试的工具，也有一些新物品。/Utilities for debugging. Also has some new items.",
+  "description": "调试的工具。/Utilities for debugging.",
   "author": "TBK",
-  "version": "1.9",
+  "version": "1.10",
   "minGameVersion": 105,
 }
