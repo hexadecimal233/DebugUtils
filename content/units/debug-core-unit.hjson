@@ -20,7 +20,26 @@ engineOffset: 15
 flying: true
 ammoCapacity: 130000
 ammoResupplyAmount: 130000
-weapons: [ 
+weapons: [
+	{
+		name: modernbullet
+		top: false
+		reload: 3
+		rotateSpeed: 50
+		targetAir: ture
+		ejectEffect: none
+		shootSound: lasershoot
+		bullet:{
+			type: LaserBoltBulletType
+			speed: 9
+			damage: 90000
+			lifetime: 80
+			healPercent: 80
+			buildingDamageMultiplier: 900
+			backColor: cceecc
+			frontColor: f0f0f0
+		}
+	}
 {
 rotate: true
 name: heal-weapon
