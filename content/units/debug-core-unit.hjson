@@ -38,6 +38,7 @@ weapons: [
 			buildingDamageMultiplier: 900
 			backColor: cceecc
 			frontColor: f0f0f0
+			collidesTeam: true
 		}
 	}
 {
