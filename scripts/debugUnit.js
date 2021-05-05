@@ -173,7 +173,7 @@ a11.abilities.add(new ForceFieldAbility(250, 1500, 50000, 30), new RepairFieldAb
 a11.abilities.add(new ShieldRegenFieldAbility(1500, 5000, 60, 250));
 a11.abilities.add(
 	newDeflectForceFieldAbility({
-            radius: 253,
+            radius: 260,
             regen: 60000,
             max: 900000,
             cooldown: 5,

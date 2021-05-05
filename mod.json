@@ -3,6 +3,6 @@
   "displayName": "[orange]调试[green]工具[]/[orange]Debug [green]Utilities",
   "description": "调试的工具。/Utilities for debugging.",
   "author": "TBK",
-  "version": "1.11",
+  "version": "1.12",
   "minGameVersion": 105,
 }
