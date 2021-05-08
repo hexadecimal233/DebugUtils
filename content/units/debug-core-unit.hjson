@@ -39,6 +39,7 @@ weapons: [
 			backColor: cceecc
 			frontColor: f0f0f0
 			collidesTeam: true
+			homingPower: 0.03
 		}
 	}
 {
@@ -306,7 +307,7 @@ damage: 500
             splashDamage: 9000
             splashDamageRadius: 80
 			homingPower: 0.19
-			homingRange: 72
+			homingRange: 400
 			weaveMag: 2
 			weaveScale: 5
             speed: 6.5
@@ -347,7 +348,7 @@ damage: 500
             splashDamage: 9000
             splashDamageRadius: 80
 			homingPower: 0.19
-			homingRange: 72
+			homingRange: 400
 			weaveMag: 2
 			weaveScale: 5
             speed: 6.5

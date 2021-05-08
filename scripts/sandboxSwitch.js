@@ -14,6 +14,7 @@ sandboxSwitch.category = Category.effect;
 sandboxSwitch.breakable = true;
 sandboxSwitch.floating = true;
 sandboxSwitch.update = true;
+sandboxSwitch.alwaysUnlocked = true;
 sandboxSwitch.buildType = () => 
   extendContent(Wall.WallBuild, sandboxSwitch, {
     placed() {
