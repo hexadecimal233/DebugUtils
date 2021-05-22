@@ -22,6 +22,27 @@ ammoCapacity: 130000
 ammoResupplyAmount: 130000
 weapons: [
 {
+  reload: 2
+  mirror: true
+  x: -3
+  y: 0
+  rotate: true
+  shootSound: laser
+  bullet:{
+sapStrength: 0.9
+length: 350,
+damage: 90000
+shootEffect: shootSmall
+hitColor: e55454
+color: e55454
+despawnEffect: none
+width: 0.55
+lifetime: 30
+knockback: -1
+  }
+  
+}
+{
   firstShotDelay: 10
   shootSound: laserbig
   x: 0
