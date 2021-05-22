@@ -21,6 +21,33 @@ flying: true
 ammoCapacity: 130000
 ammoResupplyAmount: 130000
 weapons: [
+{
+  firstShotDelay: 10
+  shootSound: laserbig
+  x: 0
+  reload: 5
+  continuous: true
+  bullet:{
+  type: ContinuousLaserBulletType
+  healPercent: 100
+  statusDuration: 600
+  status: slow
+  collidesTeam: true
+  length: 500
+  width: 30
+  lifetime: 600
+  damage: 25991
+  lightningColor: Pal.remove
+  colors: [
+  e55454,
+  ffffff
+  ]
+  shootEffect: shootBigSmoke2
+  shake: 1
+  hitEffect: hitMeltHeal
+  }
+}
+
 	{
 		name: modernbullet
 		top: false
@@ -289,7 +316,8 @@ damage: 500
 }
     {
         name: missle1
-        reload: 15.001
+        reload: 15
+        mirror: true
         x: 7
         y: 2
 		shootY: 3
@@ -331,6 +359,7 @@ damage: 500
     {
         name: missile1
         reload: 15
+        mirror: true
         x: -7
         y: -2
 		shootY: 3

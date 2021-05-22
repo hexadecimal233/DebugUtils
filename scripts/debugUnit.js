@@ -182,7 +182,11 @@ a11.abilities.add(
 	);
 a11.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 360, 30, 250));
 a11.abilities.add(InvincibleForceFieldAbility(60, Infinity, Infinity, 300));
-a11.constructor = prov(() => extend(UnitEntity, {}));
+a11.constructor = prov(() => extend(UnitEntity, {
+killed(){
+    this.dead = false;
+    this.health = Number.MAX_VALUE;
+}}));
 a11.immunities = ObjectSet.with(StatusEffects.burning, StatusEffects.freezing,StatusEffects.unmoving, StatusEffects.slow, StatusEffects.wet, StatusEffects.muddy, StatusEffects.melting, StatusEffects.sapped, StatusEffects.tarred, StatusEffects.shocked, StatusEffects.blasted, StatusEffects.corroded, StatusEffects.sporeSlowed, StatusEffects.disarmed);
 a11.payloadCapacity = (15 * 15) * Vars.tilePayload;
 a11.defaultController = () => new FlyingAI();
