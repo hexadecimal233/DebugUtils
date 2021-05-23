@@ -1,7 +1,7 @@
 type: flying
 lightRadius: 350
 lightOpacity: 1.174
-speed: 4.8
+speed: 5
 accel: 0.875
 drag: 0.065
 mineSpeed: 200
@@ -12,7 +12,7 @@ rotateSpeed: 500
 hitSize: 13
 isCounted: false
 armor: 180000
-buildSpeed: 20
+buildSpeed: 20000
 rotateShooting: true
 commandLimit: 20
 engineSize: 1
@@ -419,4 +419,29 @@ damage: 500
 			statusDuration: 80
         }
     }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    damage: 555555
+    chance:0.9
+    length: 40
+    minSpeed: 2
+    maxSpeed: 10
+    offset: 0
+    color: 44ccff
+    shootEffect:{
+          type: ParticleEffect
+          line: true
+          particles: 5
+          lifetime: 30
+          length: 20
+          strokeFrom: 16
+          strokeTo: 0
+          lenFrom: 13
+          lenTo: 0
+          colorFrom: ffacac
+          colorTo: a63d3d
+       }
+  }
 ]
