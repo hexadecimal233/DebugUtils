@@ -21,7 +21,6 @@ flying: true
 ammoCapacity: 130000
 ammoResupplyAmount: 130000
 weapons: [
-{
   {
     x: 0
     y: 100
@@ -95,6 +94,7 @@ weapons: [
       }
     }
   }
+{
 top:false
 shootSound: flame
 shootY: 2
