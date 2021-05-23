@@ -183,6 +183,25 @@ splashDdamageRadius: 30
   }
 }
 {
+inaccuracy: 360
+shootSound: laserblast
+reload: 100
+shots: 18
+bullet:{
+type:LaserBulletType
+damage: 500
+length: 500
+width: 60
+height: 8
+lifetime: 120
+pierce: true,
+color: 207740,
+reflectable: false,
+statusDuration: 500,
+status: disarmed
+  }
+}
+{
   reload: 2
   mirror: true
   x: -3
