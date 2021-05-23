@@ -21,6 +21,27 @@ flying: true
 ammoCapacity: 130000
 ammoResupplyAmount: 130000
 weapons: [
+{
+top:false
+shootSound: flame
+shootY: 2
+reload: 3
+ejectEffect: none
+bullet:{
+speed: 4
+damage: 10000
+hitSize: 7
+lifetime: 12
+pierce: true
+statusDuration: 240
+shootEffect: shootSmallFlame
+hitEffect: hitFlameSmall
+despawnEffect: none
+status: burning
+keepVelocity: false
+hittable: false
+}
+}
 {                
 top: false
 y: 1
