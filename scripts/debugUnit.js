@@ -180,13 +180,23 @@ a11.abilities.add(
             chanceDeflect: 100
         })
 	);
+a11.constructor = prov(() => extend(UnitEntity, {}));
 a11.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 360, 30, 250));
 a11.abilities.add(InvincibleForceFieldAbility(60, Infinity, Infinity, 300));
-a11.constructor = prov(() => extend(UnitEntity, {
-killed(){
-    this.dead = false;
-    this.health = Number.MAX_VALUE;
-}}));
+const light = new MoveLightningAbility(55555, 40, 0.9, 0, 2, 10, Color.valueOf("44ccff"))
+light.shootEffect = extend(ParticleEffect,{
+          line: true,
+          particles: 5,
+          lifetime: 30,
+          length: 20,
+          strokeFrom: 16,
+          strokeTo: 0,
+          lenFrom: 13,
+          lenTo: 0,
+          colorFrom: Color.valueOf("ffacac"),
+          colorTo: Color.valueOf("a63d3d")
+});
+a11.abilities.add(light);
 a11.immunities = ObjectSet.with(StatusEffects.burning, StatusEffects.freezing,StatusEffects.unmoving, StatusEffects.slow, StatusEffects.wet, StatusEffects.muddy, StatusEffects.melting, StatusEffects.sapped, StatusEffects.tarred, StatusEffects.shocked, StatusEffects.blasted, StatusEffects.corroded, StatusEffects.sporeSlowed, StatusEffects.disarmed);
 a11.payloadCapacity = (15 * 15) * Vars.tilePayload;
 a11.defaultController = () => new FlyingAI();
