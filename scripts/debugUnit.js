@@ -1,3 +1,4 @@
+const ability = require("hackability");
 const InvincibleForceFieldAbility = (radius, regen, max, cooldown) => {
 
     var realRad;
@@ -181,8 +182,10 @@ a11.abilities.add(
         })
 	);
 a11.constructor = prov(() => extend(UnitEntity, {}));
-a11.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 360, 30, 250));
+
+a11.abilities.add(new StatusFieldAbility(StatusEffects.overclock, 360, 30, 250), new UnitSpawnAbility(UnitTypes.poly, 60*50, 0, 0));
 a11.abilities.add(InvincibleForceFieldAbility(60, Infinity, Infinity, 300));
+a11.abilities.add(ability.pointDefenseAbility(0, 0, 1, 450, 99999, "def"),ability.MendFieldAbility(250, 5, 90000));
 const light = new MoveLightningAbility(55555, 40, 0.9, 0, 2, 10, Color.valueOf("44ccff"))
 light.shootEffect = extend(ParticleEffect,{
           line: true,
