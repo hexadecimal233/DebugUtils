@@ -580,4 +580,31 @@ damage: 500
 			statusDuration: 80
         }
     }
+{
+        reload: 5
+        top: false
+        rotate: true
+        shots: 2
+        inaccuracy: 1
+        ejectEffect: none
+		shootSound: missile
+		recoil: 3
+        rotateSpeed: 25
+        bullet: {
+            type: MissileBulletType
+            damage: 911000
+			homingPower: 1
+			homingRange: 400
+            speed: 6.5
+			range: 280
+			drag: 0.015
+            width: 8
+            height: 14
+			hitEffect: blastExplosion
+			despawnEffect: blastExplosion
+			shootEffect: shootBig
+			smokeEffect: shootSmallSmoke
+            lifetime: 180
+        }
+    }
 ]
